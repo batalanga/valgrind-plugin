@@ -98,9 +98,24 @@
     </dependencies>
     <properties>
         <jenkins.version>2.44</jenkins.version>
-        <java.level>7</java.level>
+        <java.level>8</java.level>
         <jenkins-test-harness.version>2.18</jenkins-test-harness.version>
     </properties>
-
-
+    
+	<build>
+		<plugins>
+			<plugin>
+			  <groupId>org.codehaus.mojo</groupId>
+			  <artifactId>animal-sniffer-maven-plugin</artifactId>
+			  <version>1.16</version>
+			  <configuration>
+			    <signature>
+			    <groupId>org.codehaus.mojo.signature</groupId>
+			    <artifactId>java18</artifactId>
+			    <version>1.0</version>
+			    </signature>
+			  </configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
