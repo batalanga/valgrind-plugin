@@ -41,10 +41,10 @@ public abstract class AbstractValgrindBuildAction extends Actionable implements 
     }
 
     /**
-     * @param request
-     * @param response
-     * @throws IOException
-     * @throws InterruptedException
+     * @param req request
+     * @param rsp response
+     * @throws IOException IOException
+     * @throws InterruptedException InterruptedException
      */
     public abstract void doGraph(StaplerRequest req, StaplerResponse rsp) throws IOException, InterruptedException;
 

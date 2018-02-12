@@ -9,11 +9,11 @@ public class ValgrindSummary
 	/**
 	 * Creates an HTML valgrind summary.
 	 * 
-	 * @param result
+	 * @param result 
 	 *            the valgrind result object
 	 * @return the HTML fragment representing the valgrind report summary
-	 * @throws InterruptedException
-	 * @throws IOException
+	 * @throws InterruptedException InterruptedException
+	 * @throws IOException IOException
 	 */
 	public static String createReportSummary(ValgrindResult result) throws IOException, InterruptedException
 	{

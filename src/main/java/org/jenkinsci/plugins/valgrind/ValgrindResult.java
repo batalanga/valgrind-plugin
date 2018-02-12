@@ -54,8 +54,8 @@ public class ValgrindResult implements Serializable
 
 	/**
 	 * @return a ValgrindReport
-	 * @throws IOException
-	 * @throws InterruptedException
+	 * @throws IOException IOException
+	 * @throws InterruptedException InterruptedException
 	 */
 	public ValgrindReport getReport() throws IOException, InterruptedException
 	{
@@ -80,8 +80,8 @@ public class ValgrindResult implements Serializable
 	 * Renders the summary Valgrind report for the build result.
 	 * 
 	 * @return the HTML fragment of the summary Valgrind report
-	 * @throws InterruptedException
-	 * @throws IOException
+	 * @throws InterruptedException InterruptedException
+	 * @throws IOException IOException
 	 */
 	public String getSummary() throws IOException, InterruptedException
 	{
@@ -90,12 +90,12 @@ public class ValgrindResult implements Serializable
 	
 	/**
 	 * 
-	 * @param link expected to be in format "id=<executable name>,<unique error id>"
-	 * @param request
-	 * @param response
+	 * @param l link: expected to be in format "id=&lt;executable name&gt;,&lt;unique error id&gt;"
+	 * @param request request
+	 * @param response response
 	 * @return valgrind detail(s)
-	 * @throws IOException
-	 * @throws InterruptedException
+	 * @throws IOException IOException
+	 * @throws InterruptedException InterruptedException
 	 */
 	public Object getDynamic(final String l, final StaplerRequest request, final StaplerResponse response)
 			throws IOException, InterruptedException
